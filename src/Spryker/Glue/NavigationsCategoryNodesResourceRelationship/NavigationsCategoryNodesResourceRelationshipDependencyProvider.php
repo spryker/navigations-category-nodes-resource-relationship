@@ -21,11 +21,6 @@ class NavigationsCategoryNodesResourceRelationshipDependencyProvider extends Abs
      */
     public const RESOURCE_CATEGORIES_REST_API = 'RESOURCE_CATEGORIES_REST_API';
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     public function provideDependencies(Container $container): Container
     {
         $container = parent::provideDependencies($container);
@@ -34,11 +29,6 @@ class NavigationsCategoryNodesResourceRelationshipDependencyProvider extends Abs
         return $container;
     }
 
-    /**
-     * @param \Spryker\Glue\Kernel\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Container
-     */
     protected function addCategoriesRestApiResource(Container $container): Container
     {
         $container->set(static::RESOURCE_CATEGORIES_REST_API, function (Container $container) {

@@ -24,9 +24,6 @@ class CategoryNodeResourceExpander implements CategoryNodeResourceExpanderInterf
      */
     protected $categoriesRestApiResource;
 
-    /**
-     * @param \Spryker\Glue\NavigationsCategoryNodesResourceRelationship\Dependency\RestResource\NavigationsCategoryNodesResourceRelationshipToCategoriesRestApiResourceInterface $categoriesRestApiResource
-     */
     public function __construct(NavigationsCategoryNodesResourceRelationshipToCategoriesRestApiResourceInterface $categoriesRestApiResource)
     {
         $this->categoriesRestApiResource = $categoriesRestApiResource;

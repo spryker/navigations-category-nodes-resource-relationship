@@ -14,17 +14,11 @@ use Spryker\Glue\NavigationsCategoryNodesResourceRelationship\Processor\Expander
 
 class NavigationsCategoryNodesResourceRelationshipFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\NavigationsCategoryNodesResourceRelationship\Processor\Expander\CategoryNodeResourceExpanderInterface
-     */
     public function createCategoryNodeResourceExpander(): CategoryNodeResourceExpanderInterface
     {
         return new CategoryNodeResourceExpander($this->getCategoriesRestApiResource());
     }
 
-    /**
-     * @return \Spryker\Glue\NavigationsCategoryNodesResourceRelationship\Dependency\RestResource\NavigationsCategoryNodesResourceRelationshipToCategoriesRestApiResourceInterface
-     */
     public function getCategoriesRestApiResource(): NavigationsCategoryNodesResourceRelationshipToCategoriesRestApiResourceInterface
     {
         return $this->getProvidedDependency(NavigationsCategoryNodesResourceRelationshipDependencyProvider::RESOURCE_CATEGORIES_REST_API);
