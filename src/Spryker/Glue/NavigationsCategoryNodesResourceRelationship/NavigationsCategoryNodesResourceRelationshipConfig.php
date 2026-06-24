@@ -12,6 +12,8 @@ use Spryker\Glue\Kernel\AbstractBundleConfig;
 class NavigationsCategoryNodesResourceRelationshipConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * @uses \Spryker\Glue\CategoriesRestApi\CategoriesRestApiConfig::RESOURCE_CATEGORY_NODES
      *
      * @var string
